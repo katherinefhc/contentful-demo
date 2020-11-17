@@ -14,6 +14,5 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.content$ = this.contentService.getContent(ContentTypeIds.loginPage);
-    console.log('******** this.content$', this.content$)
   }
 }
