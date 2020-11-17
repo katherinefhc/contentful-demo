@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'contentful-demo';
+  activeLink: string;
+  links = [
+    { route: 'profile', label: 'Profile' },
+    { route: 'dashboard', label: 'Dashboard' },
+    { route: 'login', label: 'Login' },
+];
 }

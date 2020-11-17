@@ -1,0 +1,5 @@
+<section>
+  <ng-container *ngIf="( content$ | async ) as content">
+    <h1>{{ content.fields.title }}</h1>
+  </ng-container>
+</section>

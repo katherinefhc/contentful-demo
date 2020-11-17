@@ -1,0 +1,11 @@
+<section>
+  <h1>{{(content$ | async)?.fields.title}}</h1>
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile *ngFor="let tile of tiles">
+      <mat-progress-spinner [color]="tile.color"
+                            mode="determinate"
+                            [value]="tile.value">
+      </mat-progress-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>
